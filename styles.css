@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container, .homepage-container, .academics-container, .view-classes-container, .personal-info-container {
+    max-width: auto;
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: white;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.home-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.nus-logo {
+    width: 50px;
+    height: 30px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.login-box {
+    background-color: #d0e4f7;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.notes {
+    font-size: 14px;
+}
+
+.notes ol {
+    padding-left: 20px;
+}
+
+.notes ul {
+    padding-left: 30px;
+}
+
+.underline {
+    text-decoration: underline;
+    color: #003087;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+    grid-template-rows: repeat(2, auto); /* 2 rows, height auto-adjusts */
+    gap: 10px; /* Space between tiles */
+    padding: 10px 60px 50px 10px;
+}
+
+.tile {
+    background-color: #FF9E55;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.tile-academics {
+    background-color: #4285B7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.tile-financials {
+    background-color: #F97A7A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tile h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.tile p {
+    margin: 5px 0 0;
+}
+
+.sidebar {
+    float: left;
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #003087;
+    text-decoration: none;
+}
+
+.content {
+    float: right;
+    width: 70%;
+    padding: 10px;
+}
+
+.content h3, .content h4 {
+    color: #003087;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f0f0f0;
+}
+
+table td {
+    background-color: white;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: fit-content;
+}
+
+.dropdown-btn {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-btn {
+    background-color: #0056d2;
+}
+.back-btn {
+    background-color: #003087;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.back-btn:hover {
+    background-color: #0056d2;
+}
+.addresses-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header-line {
+    border-bottom: 1px solid black; /* Light gray line */
+}
+
+.pagination-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0; /* Space above and below the pagination bar */
+}
+
+.pagination-text {
+    margin: 0 20px; /* Space between the text and arrows */
+    font-size: 14px;
+}
+
+.pagination-arrow {
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+.pagination-arrow.left-arrow {
+    margin-right: 10px;
+}
+
+.pagination-arrow.right-arrow {
+    margin-left: 10px;
+}
+
+.pagination-more {
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+}

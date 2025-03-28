@@ -1,70 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Homepage - EduRec</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="homepage-container">
-        <div class="header">
-            <div class="header-top">
-                <img src="./images/nus_logo.jpg" alt="NUS Logo" class="nus-logo">
-                <a href="homepage.html" class="home-icon">
-                    <img src="images/home-icon.png" alt="Home Icon" onerror="this.onerror=null; this.src='https://via.placeholder.com/30x30?text=Home';">
-                </a>
-            </div>
-            <div class="header-line"></div>
-            <div class="header-bottom">
-                <div class="dropdown">
-                    <button class="dropdown-btn">My Homepage ▼</button>
-                    <div class="dropdown-content">
-                        <a href="homepage.html">My Homepage</a>
-                        <a href="academics.html">Academics</a>
-                        <a href="financials.html">Financials</a>
-                        <a href="#">Fieldwork Management System</a>
-                    </div>
-                </div>
-                <div class="pagination-bar">
-                    <span class="pagination-arrow left-arrow">◄</span>
-                    <span class="pagination-text">1 of 4</span>
-                    <span class="pagination-arrow right-arrow">►</span>
-                    <span class="pagination-more">⋮</span>
-                </div>
-            </div>
+      <div class="header">
+        <div class="header-top">
+          <img src="./images/nus_logo.jpg" alt="NUS Logo" class="nus-logo" />
+          <a href="homepage.html" class="home-icon">
+            <img
+              src="images/home-icon.png"
+              alt="Home Icon"
+              onerror="this.onerror=null; this.src='https://via.placeholder.com/30x30?text=Home';"
+            />
+          </a>
         </div>
         <div class="header-line"></div>
-
-        <div class="tiles">
-            <div class="tile">
-                <h3>Announcements</h3>
-                <p>No current tasks</p>
+        <div class="header-bottom">
+          <div class="dropdown">
+            <button class="dropdown-btn">My Homepage ▼</button>
+            <div class="dropdown-content">
+              <a href="homepage.html">My Homepage</a>
+              <a href="academics.html">Academics</a>
+              <a href="financials.html">Financials</a>
+              <a href="#">Fieldwork Management System</a>
             </div>
-            <div class="tile">
-                <h3>My Favourites</h3>
-            </div>
-            <div class="tile">
-                <a href="personal-info.html"><h3>Personal Info</h3></a>
-            </div>
-            <div class="tile">
-                <a href="academics.html"><h3>Academics</h3></a>
-            </div>
-            <div class="tile">
-                <a href="financials.html"><h3>Financials</h3></a>
-            </div>
- 
-            <div class="tile">
-                <h3>Dynamic Course Registration</h3>
-            </div>
-            <div class="tile">
-                <h3>Fieldwork Management System</h3>
-            </div>
-            <div class="tile">
-                <h3>User Guides & Useful Links</h3
-            </div>
+          </div>
+          <div class="pagination-bar">
+            <span class="pagination-arrow left-arrow">◄</span>
+            <span class="pagination-text">1 of 4</span>
+            <span class="pagination-arrow right-arrow">►</span>
+            <span class="pagination-more">⋮</span>
+          </div>
         </div>
+      </div>
+      <div class="header-line"></div>
+      <div class="tiles">
+        <div class="tile">
+          <img
+            src="images/N_STD_T_ANNOUCEMENT_1.svg"
+            alt="My Favourites Icon"
+          />
+          <h3>Announcements</h3>
+          <p>No current tasks</p>
+        </div>
+        <div class="tile">
+          <img src="images/N_STF_T_MYFAV_1.svg" alt="My Favourites Icon" />
+          <h3>My Favourites</h3>
+        </div>
+        <div class="tile">
+          <a href="personal-info.html">
+            <h3>Personal Info</h3>
+            <img
+              src="images/N_STD_T_PERS_INFO_1.svg"
+              alt="Personal Info Icon"
+            />
+          </a>
+        </div>
+        <div class="tile">
+          <a href="academics.html">
+            <h3>Academics</h3>
+            <img
+              src="images/N_STD_T_ACAD_SHORTCUT_1.svg"
+              alt="Academics Icon"
+            />
+          </a>
+        </div>
+        <div class="tile">
+          <a href="financials.html">
+            <h3>Financials</h3>
+            <img
+              src="images/N_STD_T_FIN_SHORTCUT_1.svg"
+              alt="Financials Icon"
+            />
+          </a>
+        </div>
+
+        <div class="tile">
+          <h3 style="text-align: right">Dynamic Course<br />Registration</h3>
+          <img
+            src="images/N_STD_T_DCR_SHORTCUT_1.svg"
+            alt="Dynamic Course Registration Icon"
+          />
+        </div>
+        <div class="tile">
+          <h3 style="text-align: right">
+            Fieldwork<br />Management<br />System
+          </h3>
+          <img
+            src="images/N_FMS_STD_SHORTCUT_1.svg"
+            alt="Dynamic Course Registration Icon"
+          />
+        </div>
+        <div class="tile">
+          <h3 style="text-align: right">User Guides &<br />Useful Links</h3>
+          <img src="images/N_STD_T_LINKS_1.svg" alt="User Guides Icon" />
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academics - EduRec</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="academics-container">
+      <div class="header">
+        <div class="header-top">
+          <img src="./images/nus_logo.jpg" alt="NUS Logo" class="nus-logo" />
+          <a href="homepage.html" class="home-icon">
+            <img
+              src="images/home-icon.png"
+              alt="Home Icon"
+              onerror="this.onerror=null; this.src='https://via.placeholder.com/30x30?text=Home';"
+            />
+          </a>
+        </div>
+        <div class="header-bottom">
+          <a href="academics.html" class="back-btn">Academics</a>
+        </div>
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li><a href="#">Student/Preliminary Bill</a></li>
+          <li><a href="#">Loan Agreements</a></li>
+          <li><a href="#">Account Inquiry</a></li>
+          <li><a href="#">Manage Bank Accounts</a></li>
+          <li><a href="#">View Other Charges</a></li>
+          <li><a href="#">Make a Payment</a></li>
+          <li><a href="#">Student Refunds</a></li>
+          <li><a href="#">Opportunity Enhancement Grant</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h3>Student/Preliminary Bill</h3>
+        <p>
+          <strong
+            >Please select the relevant Bill Type and Term to view the
+            appropriate student bill:</strong
+          >
+        </p>
+        <p>
+          <strong><u>Student Bill</u></strong>
+        </p>
+        <ol>
+          <li>
+            Only terms with transactions (e.g. charges, payments and refunds)
+            will be displayed.
+          </li>
+          <li>
+            Select the appropriate items on the menu on the left for other
+            listed actions to be taken.
+          </li>
+        </ol>
+        <p>
+          <strong><u>Preliminary Bill</u></strong>
+        </p>
+        <ol>
+          <li>
+            This is for you to arrive at your estimated net fee payable, after
+            you have inserted your estimated financial aid amounts.
+          </li>
+          <li>
+            It is not for students taking self-funded courses (i.e. non-MOE
+            subsidized courses), special term courses, part-time courses and
+            non-graduating courses.
+          </li>
+          <li>
+            Note that the estimated net fee payable displayed in the Preliminary
+            Bill may differ from the actual Student Bill.
+          </li>
+          <li>
+            You should rely on the actual Student Bill for your finalised net
+            fee payable. Please refer to the Payment Due Date schedule to know
+            when your fees are due for payment.
+          </li>
+        </ol>
+        <p>
+          Please click here for FAQ on student finance matters or Please log a
+          ticket at http://nuservicehub.nus.edu.sg/ for further enquiries.
+        </p>
+        <p>
+          <label for="bill-type">Bill Type:</label>
+          <select id="bill-type" name="bill-type">
+            <option value="student">Student Bill</option>
+            <option value="preliminary">Preliminary Bill</option>
+          </select>
+        </p>
+        <p>
+          <label for="term-type">Term:</label>
+          <select id="term-type" name="term-type">
+            <option value="sem-1">2024/2025 Semester 1</option>
+            <option value="sem-2">2024/2025 Semester 2</option>
+          </select>
+        </p>
+        <p>
+          <!-- The button wrapped in an anchor tag with target="_blank" to open in a new tab -->
+          <a href="" target="_blank" class="button-link">View Student Bill</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

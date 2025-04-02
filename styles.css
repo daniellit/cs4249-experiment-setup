@@ -1,11 +1,148 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
 
-.login-container,
+/* Login Page Styles */
+.login-page {
+  background-color: #255C86; /* Dark blue background */
+  color: #fff; /* White text */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.login-container {
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+  justify-content: center;
+  text-align: center;
+}
+.login-button {
+  background-color: #668ECA; /* Light blue button */
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid black;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.login-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login-button-container button {
+  width: 50%; /* Fixed width for buttons */
+  height: 50px; /* Fixed height for buttons */
+  margin: 0 10px; /* Space between buttons */
+  padding: 10px 20px;
+  background-color: #FFAB40; /* Light blue button */
+  color: #fff;
+  border: black 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button:hover {
+  background-color: #00a3d6; /* Darker blue on hover */
+  color: #fff;
+  border: 1px solid black;
+}
+
+.login-header {
+  background-color: #4D7FA7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.login-nus-logo {
+  width: 300px; /* Adjust based on the actual logo size */
+}
+.login-edurec-logo {
+  width: 300px; /* Adjust based on the actual logo size */
+  margin-bottom: 40px;
+}
+
+.login-header h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #fff;
+}
+
+.login-content {
+  background-color: #4D7FA7; /* Slightly lighter blue for the content area */
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+}
+.login-content li {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.login-link {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.login-link a {
+  color: white; /* Light blue for links */
+  text-decoration: underline;
+}
+
+.login-link a:hover {
+  color: #00a3d6;
+}
+
+.important-notes {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.important-notes h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.important-notes ol {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.important-notes li {
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.important-notes ul {
+  padding-left: 20px;
+  margin: 5px 0;
+}
+
+.important-notes a {
+  color: #00b7eb;
+  text-decoration: underline;
+}
+
+.important-notes a:hover {
+  color: #00a3d6;
+}
 .homepage-container,
 .academics-container,
 .view-classes-container,

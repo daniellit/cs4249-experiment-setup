@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentPage = window.location.pathname.split('/').pop();
 
     const tilePageMap = {
-        'homepage.html': { tileId: 'homepage-tile', color: '#28a745' },
+        'homepage-a.html': { tileId: 'homepage-tile', color: '#28a745' },
         'academics.html': { tileId: 'academics-tile', color: '#dc3545' },
         'financials.html': { tileId: 'financials-tile', color: '#dc3545' },
     };
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     for (const [page, { tileId, color }] of Object.entries(tilePageMap)) {
-        if (currentPage === page || (currentPage === '' && page === 'homepage.html')) {
+        if (currentPage === page || (currentPage === '' && page === 'homepage-a.html')) {
             const tile = document.getElementById(tileId);
             if (tile) {
                 tile.style.backgroundColor = color;
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    if (currentPage === 'homepage.html' || currentPage === '') {
+    if (currentPage === 'homepage-a.html' || currentPage === '') {
         const homepageTile = document.getElementById('announcements-tile');
         if (homepageTile) {
             homepageTile.style.backgroundColor = '#28a745';

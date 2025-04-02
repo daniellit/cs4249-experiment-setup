@@ -205,6 +205,13 @@ body {
   gap: 10px; /* Space between tiles */
   padding: 10px 200px 0 200px;
 }
+.tiles-new {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 columns of equal width */
+  grid-template-rows: repeat(4, auto); /* 3 rows, height auto-adjusts */
+  gap: 10px; /* Space between tiles */
+  padding: 10px 20px 0 20px;
+}
 
 /* Tile Styles */
 .tile,
@@ -409,4 +416,49 @@ table td {
   font-size: 16px;
   cursor: pointer;
   color: #333;
+}
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+.nav-tabs a {
+  padding: 10px 20px;
+  margin: 0px 20px 0px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.nav-tabs a.active {
+  background-color: #ff6200;
+  color: white;
+}
+.main-content-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.sidebar-announcements {
+  /* flex: 1; */
+  max-width: 300px;
+  background-color: #e0e0e0;
+  padding: 20px;
+  margin-left: 20px;
+}
+.sidebar-announcements h3 {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+.announcement {
+  margin: 10px 0;
+}
+.announcement a {
+  color: #003087;
+  text-decoration: none;
+}
+.announcement .date {
+  color: #666;
+  font-size: 12px;
 }

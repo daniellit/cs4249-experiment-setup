@@ -53,12 +53,6 @@ body {
   font-size: 16px;
 }
 
-.login-button:hover {
-  background-color: #00a3d6; /* Darker blue on hover */
-  color: #fff;
-  border: 1px solid black;
-}
-
 .login-header {
   background-color: #4D7FA7;
   display: flex;
@@ -105,7 +99,7 @@ body {
 }
 
 .login-link a:hover {
-  color: #00a3d6;
+  cursor: pointer;
 }
 
 .important-notes {
@@ -168,8 +162,8 @@ body {
 }
 
 .nus-logo {
-  width: 50px;
-  height: 30px;
+  width: 69px;
+  height: 47px;
 }
 
 .header-bottom {

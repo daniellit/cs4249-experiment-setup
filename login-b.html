@@ -15,7 +15,7 @@
         </div>
         <div class="login-content">
             <div class="login-button-container">
-                <button type="button" style="text-align: center;" class="login-link">Login to EduRec</button type="button">
+                <button type="button" style="text-align: center;" class="login-link" data-homepage-link>Login to EduRec</button>
             </div>
                 
             <div class="important-notes">
@@ -37,5 +37,14 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", enableAllHomepageLinks);
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        preserveQueryParamsOnNav();
+    });
+    </script>
 </body>
 </html>

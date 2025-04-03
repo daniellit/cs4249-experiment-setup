@@ -101,3 +101,78 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+function enableAllHomepageLinks() {
+    const params = new URLSearchParams(window.location.search);
+    const variant = params.get("variant");
+    const participantId = params.get("participant_id");
+  
+    const homepage = variant?.includes("home-b") ? "homepage-b.html" : "homepage-a.html";
+    const homepageUrl = `${homepage}?variant=${variant}&participant_id=${participantId}`;
+  
+    document.querySelectorAll("[data-homepage-link]").forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.location.href = homepageUrl;
+      });
+    });
+  }
+
+  function preserveQueryParamsOnNav(selectors = 'a[href]') {
+    const params = new URLSearchParams(window.location.search);
+    if (![...params].length) return; // skip if no query params
+  
+    const queryString = '?' + params.toString();
+  
+    document.querySelectorAll(selectors).forEach(link => {
+      const href = link.getAttribute('href');
+      console.log('action')
+      if (
+        href &&
+        !href.startsWith('http') &&
+        !href.includes('?') &&
+        !href.startsWith('#') &&
+        href.endsWith('.html')
+      ) {
+        link.setAttribute('href', `${href}${queryString}`);
+      }
+    });
+  }
+
+  function redirectToCorrectVariantLinks() {
+    const params = new URLSearchParams(window.location.search);
+    const variant = params.get("variant");
+    const participantId = params.get("participant_id");
+    const query = `?variant=${variant}&participant_id=${participantId}`;
+  
+    console.log("🔍 redirectToCorrectVariantLinks is running");
+    console.log("🌱 variant =", variant);
+    console.log("👤 participantId =", participantId);
+  
+    const linkMap = [
+      // Academics variants
+      { selector: 'a[href="academics.html"]', variantMatch: 'home-b', replacement: 'homepage-b.html' },
+      { selector: 'a.back-btn[href="academics.html"]', variantMatch: 'home-b', replacement: 'homepage-b.html' },
+      { selector: '#academics-link', variantMatch: 'home-b', replacement: 'homepage-b.html' }, // ID fallback
+      // Financials variants
+      { selector: 'a[href="financials.html"]', variantMatch: 'home-b', replacement: 'financials-b.html' },
+      { selector: 'a.back-btn[href="financials.html"]', variantMatch: 'home-b', replacement: 'financials-b.html' },
+      { selector: '#financials-link', variantMatch: 'home-b', replacement: 'financials-b.html' } // ID fallback
+    ];
+  
+    linkMap.forEach(({ selector, variantMatch, replacement }) => {
+      const el = document.querySelector(selector);
+      if (!el) {
+        console.warn(`⚠️ Selector "${selector}" not found.`);
+        return;
+      }
+  
+      if (variant?.includes(variantMatch)) {
+        console.log(`✅ Updating link "${selector}" to → ${replacement}${query}`);
+        el.setAttribute('href', `${replacement}${query}`);
+      } else {
+        console.log(`ℹ️ No match for variant "${variantMatch}" in "${variant}" → leaving "${selector}" unchanged.`);
+      }
+    });
+  }
+  

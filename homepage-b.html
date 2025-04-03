@@ -11,7 +11,7 @@
       <div class="header">
         <div class="header-top">
           <img src="./images/National_University_of_Singapore-Logo.wine.svg" alt="NUS Logo" class="nus-logo" />
-          <a href="homepage-b.html" class="home-icon">
+          <a data-homepage-link href="#" class="home-icon">
             <img
               src="images/home-icon.png"
               alt="Home Icon"
@@ -24,15 +24,15 @@
           <div class="dropdown">
             <button class="dropdown-btn">My Homepage ▼</button>
             <div class="dropdown-content">
-              <a href="homepage-b.html">My Homepage</a>
-              <a href="homepage-b.html">Academics</a>
+              <a data-homepage-link href="#">My Homepage</a>
+              <a data-homepage-link href="#">Academics</a>
               <a href="financials-b.html">Financials</a>
               <a href="#">Fieldwork Management System</a>
             </div>
           </div>
           <div class="nav-tabs">
             <a href="personal-info.html" class="active">My Info</a>
-            <a style="background-color: #4285b7;" href="homepage-b.html">Academics</a>
+            <a style="background-color: #4285b7;" data-homepage-link href="#">Academics</a>
             <a style="background-color: #f97a7a;" href="financials-b.html">Financials</a>
             <a style="background-color: #28a745;" href="#">Fieldwork</a>
         </div>
@@ -139,5 +139,10 @@
         </div>
       </div>
     <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        preserveQueryParamsOnNav();
+      });
+    </script>
   </body>
 </html>

@@ -11,7 +11,7 @@
         <div class="header">
             <div class="header-top">
                 <img src="./images/National_University_of_Singapore-Logo.wine.svg" alt="NUS Logo" class="nus-logo">
-                <a href="homepage-a.html" class="home-icon">
+                <a id="home-icon" href="#" class="home-icon">
                     <img src="images/home-icon.png" alt="Home Icon" onerror="this.onerror=null; this.src='https://via.placeholder.com/30x30?text=Home';">
                 </a>
             </div>
@@ -19,7 +19,7 @@
                 <div class="dropdown">
                     <button class="dropdown-btn">My Homepage ▼</button>
                     <div class="dropdown-content">
-                        <a href="homepage-a.html">My Homepage</a>
+                        <a id="home-icon" href="#">My Homepage</a>
                         <a href="academics.html">Academics</a>
                         <a href="personal-info.html">Personal Info</a>
                         <a href="#">Profile</a>
@@ -92,5 +92,13 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", enableAllHomepageLinks);
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          preserveQueryParamsOnNav();
+        });
+      </script>
 </body>
 </html>

@@ -11,12 +11,12 @@
         <div class="header">
             <div class="header-top">
                 <img src="./images/National_University_of_Singapore-Logo.wine.svg" alt="NUS Logo" class="nus-logo">
-                <a href="homepage-a.html" class="home-icon">
+                <a data-homepage-link href="#" class="home-icon">
                     <img src="images/home-icon.png" alt="Home Icon" onerror="this.onerror=null; this.src='https://via.placeholder.com/30x30?text=Home';">
                 </a>
             </div>
             <div class="header-bottom">
-                <a href="academics.html" class="back-btn">Academics</a>
+                <a id="academics-link" href="academics.html" class="back-btn">Academics</a>
             </div>
         </div>
         <div class="sidebar">
@@ -114,5 +114,15 @@
             </table>
         </div>
     </div>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", enableAllHomepageLinks);
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        preserveQueryParamsOnNav();
+        redirectToCorrectVariantLinks();   
+    });
+    </script> 
 </body>
 </html>

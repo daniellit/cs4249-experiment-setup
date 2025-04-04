@@ -53,15 +53,25 @@ body {
   font-size: 16px;
 }
 
+.gradient-top-bar {
+  height: 8px; /* Or adjust as needed */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background: linear-gradient(to right, #ccff66, #66ccff); /* or match screenshot */
+}
+
 .login-header {
+  padding-top: 2px;
   background-color: #4D7FA7;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
 }
 
 .login-nus-logo {
+  padding: 20px 0 0 0;
   width: 300px; /* Adjust based on the actual logo size */
 }
 .login-edurec-logo {
@@ -77,9 +87,13 @@ body {
 
 .login-content {
   background-color: #4D7FA7; /* Slightly lighter blue for the content area */
-  padding: 20px;
-  border-radius: 5px;
+  padding: 40px 100px 40px 100px;
   text-align: left;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .login-content li {
   font-size: 20px;

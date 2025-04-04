@@ -10,7 +10,11 @@
     <div class="academics-container">
       <div class="header">
         <div class="header-top">
-          <img src="./images/National_University_of_Singapore-Logo.wine.svg" alt="NUS Logo" class="nus-logo" />
+          <img
+            src="./images/National_University_of_Singapore-Logo.wine.svg"
+            alt="NUS Logo"
+            class="nus-logo"
+          />
           <a data-homepage-link href="#" class="home-icon">
             <img
               src="images/home-icon.png"
@@ -20,7 +24,9 @@
           </a>
         </div>
         <div class="header-bottom">
-          <a id="financials-link" href="financials.html" class="back-btn">Financials</a>
+          <a id="financials-link" href="financials.html" class="back-btn"
+            >Financials</a
+          >
         </div>
       </div>
       <div class="sidebar">
@@ -57,7 +63,7 @@
           </li>
         </ol>
         <p>
-          <strong><u>Preliminary Bill</u></strong>
+          <strong><u>Preliminary Bill</u></strong> (Currently Unavailable)
         </p>
         <ol>
           <li>
@@ -87,19 +93,19 @@
           <label for="bill-type">Bill Type:</label>
           <select id="bill-type" name="bill-type">
             <option value="student">Student Bill</option>
-            <option value="preliminary">Preliminary Bill</option>
           </select>
         </p>
         <p>
           <label for="term-type">Term:</label>
           <select id="term-type" name="term-type">
-            <option value="sem-1">2024/2025 Semester 1</option>
             <option value="sem-2">2024/2025 Semester 2</option>
           </select>
         </p>
         <p>
           <!-- The button wrapped in an anchor tag with target="_blank" to open in a new tab -->
-          <a href="" target="_blank" class="button-link">View Student Bill</a>
+          <a href="STUDENT_BILL.pdf" target="_blank" class="button-link"
+            >View Student Bill</a
+          >
         </p>
       </div>
     </div>
@@ -110,7 +116,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         preserveQueryParamsOnNav();
-        redirectToCorrectVariantLinks();  
+        redirectToCorrectVariantLinks();
       });
     </script>
   </body>

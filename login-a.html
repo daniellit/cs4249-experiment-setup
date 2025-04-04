@@ -15,7 +15,7 @@
         </div>
         <div class="login-content">
             <div class="login-button">
-                <p style="text-align: center;" class="login-link">Please click <strong><a id="login-link" href="#">here</a></strong> to login to Education Records System (EduRec).</p>
+                <p style="text-align: center;" class="login-link">Please click <strong><a data-homepage-link href="#">here</a></strong> to login to Education Records System (EduRec).</p>
             </div>
             <div class="important-notes">
                 <h2>Important Notes:</h2>
@@ -38,22 +38,12 @@
     </div>
     <script src="script.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const urlParams = new URLSearchParams(window.location.search);
-          const variant = urlParams.get("variant");
-          const participantId = urlParams.get("participant_id");
-    
-          let homepage = "homepage-a.html"; // Default
-          if (variant === "login-a-home-b") {
-            homepage = "homepage-b.html";
-          }
-    
-          const loginLink = document.getElementById("login-link");
-          loginLink.addEventListener("click", (e) => {
-            e.preventDefault();
-            window.location.href = `${homepage}?variant=${variant}&participant_id=${participantId}`;
-          });
-        });
-      </script>
+        document.addEventListener("DOMContentLoaded", enableAllHomepageLinks);
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        preserveQueryParamsOnNav();
+    });
+    </script>
 </body>
 </html>

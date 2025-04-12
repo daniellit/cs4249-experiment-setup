@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Addresses - EduRec</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="logging.js"></script>
 </head>
 <body>
     <div class="personal-info-container">
@@ -97,9 +98,14 @@
     <script src="script.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", enableAllHomepageLinks);
+        document.addEventListener('myevent', loggingjs.logEvent, true);
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+          document.dispatchEvent(new CustomEvent('myevent', { detail: {
+            eventName: 'myeventName',
+            info: {'key1': 'val1', 'key2': 'val2'}
+          }}));
           preserveQueryParamsOnNav();
         });
       </script>

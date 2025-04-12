@@ -39,7 +39,6 @@
     </div>
     <script src="script.js"></script>
     <script>
-        document.addEventListener('myevent', loggingjs.logEvent, true);
         document.addEventListener("DOMContentLoaded", () => {
           document.dispatchEvent(new CustomEvent('myevent', { detail: {
             eventName: 'myeventName',

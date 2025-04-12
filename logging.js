@@ -132,7 +132,7 @@ function logEvent(event, customName, customInfo) {
   var info = JSON.stringify(infoObj);
   var target = document;
   if (event) {target = elementDesc(event.target);}
-  var state = location.hash;
+  var state = window.location.href;
 
   if (ENABLE_CONSOLE_LOGGING) {
     console.log(uid, time, eventName, target, info, state, LOG_VERSION);
